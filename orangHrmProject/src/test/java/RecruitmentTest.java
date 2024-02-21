@@ -1,18 +1,15 @@
-
-import org.openqa.selenium.support.PageFactory;
-
 import org.testng.annotations.Test;
-import pages.LoginPage;
 
 
-
-public class FirstTest extends TestBase {
+public class RecruitmentTest extends TestBase {
     //WebDriver driver;
 
 
     @Test
     public void test01(){
-       startLoginPage().loginToDashboard();
+       startLoginPage()
+               .loginToDashboard()
+               .navigateToRecruitmentPage();
         try {
             Thread.sleep(5000);
         } catch (InterruptedException e) {
