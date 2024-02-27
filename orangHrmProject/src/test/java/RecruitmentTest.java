@@ -9,7 +9,8 @@ public class RecruitmentTest extends TestBase {
     public void test01(){
        startLoginPage()
                .loginToDashboard()
-               .navigateToRecruitmentPage();
+               .navigateToRecruitmentPage()
+               .selectOptionFromDropdown("QA Lead");
         try {
             Thread.sleep(5000);
         } catch (InterruptedException e) {
